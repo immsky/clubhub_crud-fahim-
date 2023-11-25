@@ -1,0 +1,111 @@
+<!--include header-->
+<%-include('include/_header')%>
+<!--/include header-->
+
+ <!--main site-->
+ <main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex justify-between">
+           <div class="filter">
+            <a href="/"> <i class="fas fa-angle-double-left"> </i> EVENT LIST</a>
+           </div>
+        </div>
+
+        <div class="highlighted-box">
+            <div class="form-title text-center">
+                <h2 class="text-dark">Update Event</h2>
+                <span class="text-light">Use the below form to Update an Event</span>
+            </div>
+        
+                                             </div>
+<!--add user form-->
+<!--form handling-->
+
+<form method="POST" id="update_user">
+    <div class = "new_user"> 
+        <div class="form-group">
+            <label for="name" class="text-light">Event Name</label>
+            <input type="hidden" name = "id" value="">
+            <input type="text" name="name" value="" placeholder="Event Name"
+        </div>
+    </div>
+
+    <div class = "new_user"> 
+        <div class="form-group">
+            <label for="name" class="text-light">Club Name</label>
+            <input type="hidden" name = "id" value="">
+            <input type="text" name="name" value="" placeholder="Club Name"
+        </div>
+
+
+
+
+                    <div class = "form-group"> 
+                        <div class="form-group">
+                            <label for="event_details" class="text-light">Event Details: </label>
+                            <textarea name="message" rows="4" cols="30"></textarea>
+                            
+
+                        </div>  
+                        <form method="POST">
+                            <div id="venue">
+                             <div id="venue">
+                                <label for="venue" class="text-light">Venue</label>
+                              
+                                <select name="venue">
+                                     <option value="1">select venue</option>
+                                        <option value="mini seminar hall">mini seminar hall</option>
+                                        <option value="purple hall">purple hall</option>
+                                        <option value="rec tech lounge">rec tech lounge</option>
+                                        <option value="library">library</option>
+                                        <option value="academic block">academic block</option>
+                                        <option value="workshop block seminar">workshop block seminar</option>
+                                        <option value="others">if other place please specify</option>                                              
+                                    </select>
+                                    <input type="text" name="others" id="others" /></td>
+                                </div>
+                            </div>
+                        </form>
+
+                        
+                            <div class = "form-group"> 
+                                <div class="form-group">
+                                    <label for="quantity">Capacity:</label>
+                                    <input type="number" id="capacity" placeholder="capacity" 
+                                </div>
+
+                                <div class = "form-group"> 
+                                    <div class="form-group">
+                                        <label for="appt">Select a time:</label>
+                                        <input type="time" id="appt" name="appt">
+                                    </div>
+
+                                    <div class = "form-group"> 
+                                        <div class="form-group">
+                                            <label for="Date:">Date:</label>
+                                            <input type="date" id="date" name="date">
+                                     </div>
+
+                                     <div class ="form-group">
+                                        <button type="submit" class = "btn text-dark update">Save</button>
+                                     </div>
+                                     </div>
+                                     
+    </div>
+
+    
+</form>
+                                             
+            </div>
+    
+            
+        
+    </div>
+</main>
+
+<!--/main site-->
+
+
+<!--include footer-->
+<%-include('include/_footer')%>
+<!--/include footer-->

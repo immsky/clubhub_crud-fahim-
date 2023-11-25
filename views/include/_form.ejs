@@ -1,0 +1,76 @@
+<!--form handling-->
+<form action ="/api/users" method = "POST" id="add_user">
+    <div class = "new_user"> 
+        <div class="form-group">
+            <label for="EVENT_NAME" class="text-light">Event Name</label>
+            <input type="hidden" name = "id" value="">
+            <input type="text" name="EVENT_NAME" value="" placeholder="EVENT_NAME"
+        </div>
+    </div>
+
+    <div class = "new_user"> 
+        <div class="form-group">
+            <label for="name" class="text-light">Club Name</label>
+            <input type="hidden" name = "Club_Name" value="" 
+            onChange={e=>setEmail(e.target.value)}>
+            <input type="text" name="Club_Name" value="" placeholder="Club_Name"
+        </div>
+
+
+
+
+                    <div class = "form-group"> 
+                        <div class="form-group">
+                            <label for="event_details" class="text-light">Event Details: </label>
+                            <textarea name="EVENT_DETAILS" rows="4" cols="30"></textarea>
+                            
+
+                        </div>  
+                        <form method="POST">
+                            <div id="venue">
+                             <div id="venue">
+                                <label for="venue" class="text-light">Venue</label>
+                              
+                                <select name="VENUE">
+                                     <option value="1">select venue</option>
+                                        <option value="mini seminar hall">mini seminar hall</option>
+                                        <option value="purple hall">purple hall</option>
+                                        <option value="rec tech lounge">rec tech lounge</option>
+                                        <option value="library">library</option>
+                                        <option value="academic block">academic block</option>
+                                        <option value="workshop block seminar">workshop block seminar</option>
+                                        <option value="others">if other place please specify</option>                                              
+                                    </select>
+                                    <input type="text" name="OTHERS" id="others" /></td>
+                                </div>
+                            </div>
+                        </form>
+
+                        
+                            <div class = "form-group"> 
+                                <div class="form-group">
+                                    <label for="quantity">Capacity:</label>
+                                    <input type="number" id="capacity" placeholder="capacity" 
+                                </div>
+
+                                <div class = "form-group"> 
+                                    <div class="form-group">
+                                        <label for="appt">Select a time:</label>
+                                        <input type="time" id="appt" name="TIME">
+                                    </div>
+
+                                    <div class = "form-group"> 
+                                        <div class="form-group">
+                                            <label for="Date:">Date:</label>
+                                            <input type="date" id="date" name="DATE">
+                                     </div>
+
+                                     <div class ="form-group">
+                                        <button type="submit" class = "btn text-dark update">Save</button>
+                                     </div>
+                                     </div>
+                                     
+    </div>
+
+    
+</form>
